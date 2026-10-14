@@ -467,3 +467,10 @@ html,body{max-width:100%;overflow-x:clip}body{overflow-x:hidden} .ambient-top{ri
 .reward-step-card--direct .contact-channel{background:rgba(8,10,14,.62);border-color:rgba(247,147,26,.32);min-height:112px;}
 .reward-step-card--direct .contact-channel:hover{background:rgba(17,20,25,.92);}
 @media(max-width:700px){.reward-step-card--direct .step-content p{margin-bottom:14px;}.reward-step-card--direct .contact-v10-grid{gap:10px;}.reward-step-card--direct .contact-channel{min-height:104px;}}
+
+
+/* V27 restore orange step numbers and remove white inline numerals */
+.reward-step-card{display:flex;align-items:flex-start;gap:14px;}
+.reward-step-card .step-content{width:auto;flex:1;}
+.step-number{display:grid !important;flex:0 0 34px;width:34px;height:34px;place-items:center;border-radius:50%;background:rgba(247,147,26,.12);border:1px solid rgba(247,147,26,.35);color:#FFD600;font-weight:700;font-size:13px;}
+@media(max-width:700px){.reward-step-card{gap:11px;}.step-number{width:30px;height:30px;flex-basis:30px;font-size:12px;}}
