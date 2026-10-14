@@ -474,3 +474,33 @@ html,body{max-width:100%;overflow-x:clip}body{overflow-x:hidden} .ambient-top{ri
 .reward-step-card .step-content{width:auto;flex:1;}
 .step-number{display:grid !important;flex:0 0 34px;width:34px;height:34px;place-items:center;border-radius:50%;background:rgba(247,147,26,.12);border:1px solid rgba(247,147,26,.35);color:#FFD600;font-weight:700;font-size:13px;}
 @media(max-width:700px){.reward-step-card{gap:11px;}.step-number{width:30px;height:30px;flex-basis:30px;font-size:12px;}}
+
+
+/* V29 expanded direct contact cards */
+.reward-step-card--direct {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.reward-step-card--direct .contact-v10-grid {
+  gap: 14px;
+  width: 100%;
+}
+.reward-step-card--direct .contact-channel {
+  min-height: 126px;
+  padding: 18px 18px;
+}
+.reward-step-card--direct .channel-action {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:8px;
+}
+.reward-step-card--direct .channel-action > span:first-child {
+  flex:1;
+}
+@media(max-width:700px){
+ .reward-step-card--direct .contact-channel{
+   min-height:118px;
+   padding:16px;
+ }
+}
