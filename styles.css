@@ -408,3 +408,46 @@ html,body{max-width:100%;overflow-x:clip}body{overflow-x:hidden} .ambient-top{ri
 .contact-channel{padding:18px 20px;min-height:120px;}
 .channel-head strong{font-size:22px;}
 @media(max-width:700px){.reward-methods p{margin-bottom:16px}.contact-channel{padding:14px 16px;min-height:108px}.channel-head strong{font-size:18px}}
+
+/* V25 Step Card layout */
+.step-card-layout{display:flex;flex-direction:column;gap:18px;margin-top:16px}
+.reward-step-card{
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+  padding:18px 20px;
+  background:rgba(255,255,255,.025);
+  border:1px solid rgba(247,147,26,.20);
+  border-radius:18px;
+}
+.step-number{
+  flex:0 0 34px;
+  width:34px;height:34px;
+  display:grid;place-items:center;
+  border-radius:50%;
+  background:rgba(247,147,26,.12);
+  border:1px solid rgba(247,147,26,.35);
+  color:#FFD600;
+  font-weight:700;
+  font-size:13px;
+}
+.step-content strong{
+  display:block;
+  color:#fff;
+  font-size:17px;
+  line-height:1.4;
+  margin-bottom:8px;
+}
+.step-content p{
+  margin:0;
+  color:#CBD1DC;
+  font-size:15px;
+  line-height:1.6;
+}
+@media(max-width:700px){
+ .step-card-layout{gap:14px;margin-top:14px}
+ .reward-step-card{padding:15px 14px;gap:11px;border-radius:16px}
+ .step-number{width:30px;height:30px;flex-basis:30px;font-size:12px}
+ .step-content strong{font-size:14px;margin-bottom:5px}
+ .step-content p{font-size:12.5px;line-height:1.55}
+}
